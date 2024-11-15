@@ -23,20 +23,28 @@ export default [
     ],
   },
   {
-    path:'/',
-    redirect: '/add_chart'
+    path: '/',
+    redirect: '/add_chart',
   },
   {
     path: '/add_chart',
-    icon: 'smile',
-    component: './AddChart'
+    icon: 'barChart',
+    name: '智能分析',
+    component: './AddChart',
   },
-  // {
-  //   path: '/welcome',
-  //   name: 'welcome',
-  //   icon: 'smile',
-  //   component: './Welcome',
-  // },
+  {
+    path: '/add_chart_async',
+    icon: 'barChart',
+    name: '智能分析(异步)',
+    component: './AddChartAsync',
+  },
+  {
+    path: '/my_chart',
+    icon: 'pieChart',
+    name: '我的图表',
+    component: './MyChart',
+  },
+
   {
     path: '/admin',
     name: 'admin',
